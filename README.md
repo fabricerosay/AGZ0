@@ -56,16 +56,21 @@ start training:
 ## Results
 
 Right now I didn't train very strongs nets.
+
 -On gobang nets you can train a 9x9 nets able on par with very good alphabeta bots in a something like 10 hours or so(to 
 do so you have to start on on smaller board and use a net structure that can scale ie using pooling, this accelerate the training a lot,
 a net trained on 7x7 is already very strong on 9x9)
+
 -On 4IARow: 6 hours produce a net that can beat the perfect player when starting, though it is far from being perfect (tested on 
 http://blog.gamesolver.org/solving-connect-four/02-test-protocol/ hardest set, net alone makes 5 to 10% mistake depending on the set)
+
 -On UTTT and Reversi (6x6) it's possible to beat vanilla mcts with 10k rollout.
 
 ## Performance 
 I don't make precise measurement of perfromance.
+
 Just to give  an idea: my configuration is Core7, 16G RAM and Nvdia 1070.
-One iteration on 4IARow: 400 rollouts, 64x4 net, 1000 games per iteration takes about 6 to 8 minutes with 200 games in parallel, 
-training time included. With a 64x7 nets this time goes up to 12 minutes.
+
+One iteration on 4IARow: 400 rollouts, 64x4 net, 1000 games per iteration takes about 6 to 8 minutes with 200 games in parallel, training time included. With a 64x7 nets this time goes up to 12 minutes.
+
 Compared to implementation in Python this is orders of magnitude faster.
