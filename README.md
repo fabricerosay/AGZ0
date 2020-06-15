@@ -60,7 +60,7 @@ start training:
 
 Right now I didn't train very strongs nets.
 
--On gobang nets you can train a 9x9 nets able on par with very good alphabeta bots in a something like 10 hours or so(to 
+-On gobang nets you can train a 9x9 nets on par with very good alphabeta bots in a something like 10 hours or so(to 
 do so you have to start on on smaller board and use a net structure that can scale ie using pooling, this accelerate the training a lot,
 a net trained on 7x7 is already very strong on 9x9)
 
