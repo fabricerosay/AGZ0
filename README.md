@@ -8,8 +8,11 @@ This project is inspired by the many replica already existing specifically:
   -https://github.com/tejank10/AlphaGo.jl
 
 It implements the core algorithm in 3 distincts files:
+
   -mctsworkers: a somehow multithreaded mcts(puct version) that can simulate many games in parallel
+
   -selfplay: handles the selfplay loop producing data and training the neural net
+  
   -train: solely train the network in batch
   
  The code is as ugly as possible and mostly if not completly uncommented (self made programmer style), it will change 
