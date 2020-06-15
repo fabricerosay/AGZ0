@@ -26,17 +26,31 @@ It implements the core algorithm in 3 distincts files:
  trainingPipeline(actor;nbworkers=200,game="4IARow",bufferSize=40000,samplesNumber=1000,
        rollout=400,iteration=200,cpuct=1,chkfrequency=1,batchsize=512,lr=0.0005,epoch=1,temptresh=12
        ) 
-start training: -nbworkers=200 means 200 games are played in parallel
+       
+start training: 
+
+-nbworkers=200 means 200 games are played in parallel
+
 -game="4IARow" will save everything (data and net) in the folder 4IARow/Data
+
 -bufferSize=starting size of the buffer, currently it grows by 10% every iteration to a size of 1 million position
+
 -samplesNumber= number of game per iteration
+
 -rollout= total number of rollout (right now I use 4 threads)
+
 -iteration= number of training steps (here 200 mean we are generating a total of 200x1000 games)
+
 -cpuct= puct "constant"
+
 -chkfrequency=1 means everything is saved every iteration
+
 -batchsize=batchsize for training 
+
 -lr=learning rate (currently using Adam)
+
 -epoch= training epoch in one iteration 
+
 -temptresh=number a action before comiting to a deterministic policy(argmax)
 
 ## Results
