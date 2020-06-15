@@ -15,7 +15,8 @@ It implements the core algorithm in 3 distincts files:
  The code is as ugly as possible and mostly if not completly uncommented (self made programmer style), it will change 
  if I find the time to do so.
  
- ##Test it 
+ ## Test it 
+ 
  You need Julia and Flux to use it.
  Clone the repository
  Choose one one files named main "name of the game here" and compile it. It will load all the necessary stuff to launch training.
@@ -38,7 +39,8 @@ start training: -nbworkers=200 means 200 games are played in parallel
 -epoch= training epoch in one iteration 
 -temptresh=number a action before comiting to a deterministic policy(argmax)
 
-##Results
+## Results
+
 Right now I didn't train very strongs nets.
 -On gobang nets you can train a 9x9 nets able on par with very good alphabeta bots in a something like 10 hours or so(to 
 do so you have to start on on smaller board and use a net structure that can scale ie using pooling, this accelerate the training a lot,
@@ -47,7 +49,7 @@ a net trained on 7x7 is already very strong on 9x9)
 http://blog.gamesolver.org/solving-connect-four/02-test-protocol/ hardest set, net alone makes 5 to 10% mistake depending on the set)
 -On UTTT and Reversi (6x6) it's possible to beat vanilla mcts with 10k rollout.
 
-##Performance 
+## Performance 
 I don't make precise measurement of perfromance.
 Just to give  an idea: my configuration is Core7, 16G RAM and Nvdia 1070.
 One iteration on 4IARow: 400 rollouts, 64x4 net, 1000 games per iteration takes about 6 to 8 minutes with 200 games in parallel, 
