@@ -18,7 +18,6 @@ using LinearAlgebra
 include("Games/UTTT/Uttt.jl")
 include("Games/UTTT/UtttNet.jl")
 include("mctsworkers.jl")
-include("metamcts.jl")
 include("selfplay.jl")
 include("train.jl")
 
