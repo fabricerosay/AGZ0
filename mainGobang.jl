@@ -15,11 +15,11 @@ using LinearAlgebra
 
 
 include("Games/Gobang/Gobang.jl")
-include("Games/Gobang/GobangNetStandardDeviation.jl")
-include("mctsworkersStandardDeviation.jl")
+include("Games/Gobang/GobangNet.jl")
+include("mctsworkers.jl")
 # include("metamctsStandardDeviation.jl")
-include("selfplayStandardDeviation.jl")
-include("trainStandardDeviation.jl")
+include("selfplay.jl")
+include("train.jl")
 
 function startFromScratch(actor)
     #@load "Games/Reversi/Data/reseau21.json" reseau
