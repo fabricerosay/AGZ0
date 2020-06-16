@@ -18,7 +18,6 @@ using LinearAlgebra
 include("Games/Reversi/Reversi.jl")
 include("Games/Reversi/ReversiNet.jl")
 include("mctsworkers.jl")
-include("metamcts.jl")
 include("selfplay.jl")
 include("train.jl")
 
